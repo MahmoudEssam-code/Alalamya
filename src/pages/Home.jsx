@@ -49,9 +49,9 @@ const Home = () => {
       
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden isolate">
-        {/* Background Gradients */}
-        <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] rounded-full bg-secondary/10 blur-[120px] -z-10" />
-        <div className="absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] rounded-full bg-blue-600/10 blur-[150px] -z-10" />
+        {/* Premium structured background gradient instead of AI circular blurred orbs */}
+        <div className="absolute inset-0 bg-gradient-to-br from-secondary/10 via-transparent to-blue-600/5 -z-10" />
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+PGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMSIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjAyKSIvPjwvc3ZnPg==')] opacity-50 -z-10" />
         
         <div className="container mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
           <div className="max-w-3xl">
@@ -140,7 +140,7 @@ const Home = () => {
 
       {/* Services Section */}
       <section className="py-24 relative isolate">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[500px] bg-secondary/5 blur-[100px] rounded-full -z-10" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-secondary/5 to-transparent -z-10" />
         
         <div className="container mx-auto px-6">
           <div className="text-center max-w-2xl mx-auto mb-20">
@@ -189,7 +189,7 @@ const Home = () => {
 
       {/* Testimonials */}
       <section className="py-24 bg-[#0a192f] border-t border-white/5 relative overflow-hidden">
-        <div className="absolute right-0 top-0 w-1/3 h-full bg-gradient-to-l from-secondary/5 to-transparent blur-3xl -z-10" />
+        <div className="absolute inset-y-0 right-0 w-1/2 bg-gradient-to-l from-secondary/5 to-transparent -z-10" />
         
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">

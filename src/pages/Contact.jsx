@@ -22,9 +22,9 @@ const Contact = () => {
     <div className="bg-[#0a192f] min-h-screen text-[#ccd6f6] overflow-hidden pt-24 pb-12">
       
       {/* Page Header */}
-      <div className="relative py-20 lg:py-32 border-b border-white/5 isolate">
-        <div className="absolute inset-0 bg-gradient-to-b from-purple-900/10 to-transparent -z-10" />
-        <div className="absolute top-0 right-1/4 w-[600px] h-[600px] bg-secondary/5 blur-[150px] rounded-full -z-10" />
+      <div className="relative py-20 lg:py-32 border-b border-white/5 bg-[#060D1A] isolate">
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/10 via-[#0a192f] to-[#0a192f] -z-10" />
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
         
         <div className="container mx-auto px-6 text-center">
           <motion.div
@@ -55,8 +55,8 @@ const Contact = () => {
       </div>
 
       {/* Contact Content */}
-      <section className="py-24 relative isolate">
-        <div className="absolute left-[-10%] bottom-1/4 w-[500px] h-[500px] bg-blue-500/10 blur-[150px] rounded-full -z-10" />
+      <section className="py-24 relative isolate bg-[#0a192f]">
+        <div className="absolute inset-0 bg-gradient-to-tr from-blue-900/10 to-transparent -z-10" />
         
         <div className="container mx-auto px-6 grid lg:grid-cols-[1.2fr_1fr] gap-16">
           

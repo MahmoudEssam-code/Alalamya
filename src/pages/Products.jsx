@@ -49,9 +49,9 @@ const Products = () => {
     <div className="bg-[#0a192f] min-h-screen text-[#ccd6f6] overflow-hidden pt-24 pb-12">
       
       {/* Page Header */}
-      <div className="relative py-20 lg:py-32 border-b border-white/5 isolate">
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-900/10 to-transparent -z-10" />
-        <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-secondary/5 blur-[120px] rounded-full -z-10" />
+      <div className="relative py-20 lg:py-32 border-b border-white/5 isolate bg-[#060D1A]">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/20 via-[#0a192f] to-[#0a192f] -z-10" />
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
         
         <div className="container mx-auto px-6 text-center">
           <motion.div
@@ -126,10 +126,9 @@ const Products = () => {
       </section>
 
       {/* Custom Request CTA */}
-      <section className="py-24 relative overflow-hidden border-t border-white/5">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#112240] to-[#0a192f] -z-10" />
+      <section className="py-24 relative overflow-hidden border-t border-white/5 bg-[#112240]">
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-500/5 to-transparent pointer-events-none" />
         <div className="container mx-auto px-6 text-center max-w-4xl relative z-10">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-secondary/5 blur-[150px] rounded-full -z-10" />
           
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             {t('contact.title')}

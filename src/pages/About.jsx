@@ -38,8 +38,7 @@ const About = () => {
       
       {/* Page Header */}
       <div className="relative py-20 lg:py-32 border-b border-white/5 isolate">
-        <div className="absolute inset-0 bg-gradient-to-b from-secondary/5 to-transparent -z-10" />
-        <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500/10 blur-[100px] rounded-full -z-10" />
+        <div className="absolute inset-0 bg-gradient-to-br from-secondary/10 via-transparent to-blue-500/10 -z-10" />
         
         <div className="container mx-auto px-6 text-center">
           <motion.div
@@ -63,7 +62,7 @@ const About = () => {
 
       {/* Main Content */}
       <section className="py-24 relative isolate">
-        <div className="absolute left-[-10%] top-1/4 w-[500px] h-[500px] bg-secondary/5 blur-[120px] rounded-full -z-10" />
+        <div className="absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-secondary/5 to-transparent -z-10" />
         
         <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
           <motion.div 
@@ -113,7 +112,7 @@ const About = () => {
 
       {/* Mission Vision Values */}
       <section className="py-24 bg-[#112240] border-y border-white/5 relative overflow-hidden">
-        <div className="absolute top-0 right-1/4 w-[600px] h-[600px] bg-blue-500/5 blur-[150px] rounded-full -z-10" />
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-500/5 via-transparent to-transparent -z-10" />
         
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-8">
