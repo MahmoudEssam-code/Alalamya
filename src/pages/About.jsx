@@ -53,9 +53,11 @@ const About = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-[#ccd6f6] to-[#8892b0] mb-6 pb-2 leading-relaxed"
+            className="text-5xl md:text-6xl font-extrabold mb-6 leading-tight"
           >
-            {t('about.title')}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#ccd6f6] to-[#8892b0] pb-4 pt-2 inline-block">
+              {t('about.title')}
+            </span>
           </motion.h1>
         </div>
       </div>

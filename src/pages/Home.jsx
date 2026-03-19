@@ -64,10 +64,10 @@ const Home = () => {
                 <Star size={14} className="fill-secondary" />
                 Premium General Supplies
               </div>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.1] tracking-tight mb-6">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.6] md:leading-[1.7] tracking-tight mb-6 flex flex-wrap gap-x-3 gap-y-4">
                 {t('hero.title').split(' ').map((word, i) => (
-                  <span key={i} className={i % 2 !== 0 ? "bg-clip-text text-transparent bg-gradient-to-r from-secondary to-[#ffcc33]" : ""}>
-                    {word}{` `}
+                  <span key={i} className={i % 2 !== 0 ? "bg-clip-text text-transparent bg-gradient-to-r from-secondary to-[#ffcc33] pb-4 pt-2 inline-block" : "pb-4 pt-2 inline-block"}>
+                    {word}
                   </span>
                 ))}
               </h1>

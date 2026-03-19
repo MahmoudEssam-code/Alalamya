@@ -39,9 +39,11 @@ const Contact = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-[#ccd6f6] to-[#8892b0] mb-6 pb-2 leading-relaxed tracking-tight"
+            className="text-5xl md:text-6xl font-extrabold mb-6 leading-tight tracking-tight"
           >
-            {t('nav.contact')}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#ccd6f6] to-[#8892b0] pb-4 pt-2 inline-block">
+              {t('nav.contact')}
+            </span>
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
