@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Products from './pages/Products';
 import Contact from './pages/Contact';
+import LegalPage from './pages/LegalPage';
 
 function App() {
   const { currentLanguage } = useLanguage();
@@ -21,6 +22,9 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/products" element={<Products />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/privacy" element={<LegalPage type="privacy" />} />
+            <Route path="/terms" element={<LegalPage type="terms" />} />
+            <Route path="/cookies" element={<LegalPage type="cookies" />} />
           </Routes>
         </main>
         <Footer />

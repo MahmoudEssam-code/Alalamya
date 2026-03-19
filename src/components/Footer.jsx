@@ -86,9 +86,9 @@ const Footer = () => {
         <div className="container mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-4 text-[#8892b0] text-sm">
           <p>&copy; {new Date().getFullYear()} {t('full_company_name')}. {t('footer.rights')}.</p>
           <div className="flex gap-6">
-            <span className="hover:text-white cursor-pointer transition-colors">Privacy Policy</span>
-            <span className="hover:text-white cursor-pointer transition-colors">Terms of Service</span>
-            <span className="hover:text-white cursor-pointer transition-colors">Cookie Policy</span>
+            <Link to="/privacy" className="hover:text-white cursor-pointer transition-colors select-none">{currentLanguage === 'ar' ? 'سياسة الخصوصية' : 'Privacy Policy'}</Link>
+            <Link to="/terms" className="hover:text-white cursor-pointer transition-colors select-none">{currentLanguage === 'ar' ? 'شروط الخدمة' : 'Terms of Service'}</Link>
+            <Link to="/cookies" className="hover:text-white cursor-pointer transition-colors select-none">{currentLanguage === 'ar' ? 'ملفات الارتباط' : 'Cookie Policy'}</Link>
           </div>
         </div>
       </div>
